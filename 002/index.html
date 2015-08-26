@@ -18,8 +18,10 @@
     <pre id="code"></pre>
     <hr>
     <p><strong>Answer:</strong> <span id="answer"></span></p>
+    <p><em>Execution time: <strong id="execution"></strong></em></p>
     <cite>by <a href='http://jamie.sh'>Jamie Shepherd</a></cite>
+    <script>var t0=performance.now();</script>
     <script src="script.js"></script>
-    <script>window.fetch("script.js").then(function(e){return e.text()}).then(function(e){document.querySelector("#code").innerText=e}),document.getElementById("answer").innerHTML=answer;</script>
+    <script>var t1=performance.now();window.fetch("script.js").then(function(e){return e.text()}).then(function(e){document.querySelector("#code").innerText=e}),document.getElementById("answer").innerHTML=answer,document.getElementById("execution").innerHTML=t1-t0+"ms";</script>
 </body>
 </html>
