@@ -1,4 +1,7 @@
+// Set answer to 0
 var answer = 0;
+
+// Start the program
 var i = 2, n = 600851475143;
 
 while(i <= n) {

@@ -1,5 +1,8 @@
-var answer = 0,
-    a = 1, b = 2;
+// Set answer to 0
+var answer = 0;
+
+// Start the program
+var a = 1, b = 2;
 
 answer = b;
 

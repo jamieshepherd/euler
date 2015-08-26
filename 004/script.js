@@ -1,5 +1,8 @@
-var answer = 0,
-    result = 0,
+// Set answer to 0
+var answer = 0;
+
+// Start the program
+var result = 0,
     palindrome = '';
 
 for(i = 999; i >= 100; i--) {
